@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Responsive Navbar</title>
-	</head>
-	<body>
-        <header>
-            <div class="navbar">
-                <div class="logo"><a href="#">Web Dev Creative</a></div>
-                <ul class=""links>
-                    <li><a href="hero">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="services">Services</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ul>
-                <a href="#" class="action_btn">Get Started</a>
-                <div class="toggle_btn">
-                    <i class="fa-regular fa bars"></i>
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Web Dev Creative</a></div>
+            <ul class="" links>
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-regular fa-bars"></i>
             </div>
-        </header>
-    </body>
+        </div>
+    </header>
+</body>
+
 </html>
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+    }
 
+    body {
+        height: 100vh;
+        background-color: #000;
+        background-image: url('https://i.pinimg.com/736x/2c/88/0a/2c880a0335f9f2f6fd9c3b2351f87d02.jpg');
+        background-size: cover;
+        background-position: center;
+    }   
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    a:hover {
+        color: orange;
+    }
+
+    header {
+        position: relative;
+        padding: 0 2rem;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 </style>
